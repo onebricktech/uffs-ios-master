@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tabbar View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="TabbarViewController" id="BYZ-38-t0r" customClass="TabbarViewController" customModule="Genesis" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="410" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HSc-OO-OmK">
+                                <rect key="frame" x="0.0" y="44" width="410" height="758"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vcI-Z8-6MO">
+                                <rect key="frame" x="0.0" y="802" width="410" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hwx-JJ-JrH">
+                                        <rect key="frame" x="0.0" y="0.0" width="82" height="60"/>
+                                        <state key="normal" image="icons8_Home_96px"/>
+                                        <state key="selected" image="icons8_Home_32px"/>
+                                        <connections>
+                                            <action selector="commonBtnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YU5-3R-PjE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="weM-AC-Sxu">
+                                        <rect key="frame" x="82" y="0.0" width="82" height="60"/>
+                                        <state key="normal" image="icons8_Bar_Chart_96px"/>
+                                        <state key="selected" image="icons8_Bar_Chart_96px_1"/>
+                                        <connections>
+                                            <action selector="commonBtnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ygd-13-HJl"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0JY-2U-JAO">
+                                        <rect key="frame" x="164" y="0.0" width="82" height="60"/>
+                                        <state key="normal" image="icons8_Stocks_96px_1"/>
+                                        <state key="selected" image="icons8_Stocks_96px_2"/>
+                                        <connections>
+                                            <action selector="commonBtnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UKL-Vk-nou"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qno-kp-3hl">
+                                        <rect key="frame" x="246" y="0.0" width="82" height="60"/>
+                                        <state key="normal" image="icons8_Wallet_96px_3"/>
+                                        <state key="selected" image="icons8_Wallet_96px_4"/>
+                                        <connections>
+                                            <action selector="commonBtnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nto-JC-QaP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uKf-8Z-cUH">
+                                        <rect key="frame" x="328" y="0.0" width="82" height="60"/>
+                                        <state key="normal" image="icons8_Male_User_96px_1"/>
+                                        <state key="selected" image="icons8_Male_User_96px_2"/>
+                                        <connections>
+                                            <action selector="commonBtnAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="knf-T2-QV2"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S8E-Bb-OJB">
+                                        <rect key="frame" x="0.0" y="0.0" width="410" height="1"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="BG2-Kz-ktO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="0JY-2U-JAO" secondAttribute="bottom" id="1ij-Ww-fa5"/>
+                                    <constraint firstAttribute="trailing" secondItem="S8E-Bb-OJB" secondAttribute="trailing" id="4GX-I8-1bm"/>
+                                    <constraint firstItem="hwx-JJ-JrH" firstAttribute="top" secondItem="vcI-Z8-6MO" secondAttribute="top" id="7Vh-JF-32J"/>
+                                    <constraint firstAttribute="bottom" secondItem="uKf-8Z-cUH" secondAttribute="bottom" id="8JJ-Fj-X1Q"/>
+                                    <constraint firstAttribute="trailing" secondItem="uKf-8Z-cUH" secondAttribute="trailing" id="973-34-fKZ"/>
+                                    <constraint firstItem="uKf-8Z-cUH" firstAttribute="leading" secondItem="Qno-kp-3hl" secondAttribute="trailing" id="DI7-Ax-5vm"/>
+                                    <constraint firstItem="0JY-2U-JAO" firstAttribute="top" secondItem="vcI-Z8-6MO" secondAttribute="top" id="FFs-NC-mrJ"/>
+                                    <constraint firstItem="hwx-JJ-JrH" firstAttribute="leading" secondItem="vcI-Z8-6MO" secondAttribute="leading" id="GOZ-Ug-3HF"/>
+                                    <constraint firstItem="uKf-8Z-cUH" firstAttribute="top" secondItem="vcI-Z8-6MO" secondAttribute="top" id="HM8-yI-e6I"/>
+                                    <constraint firstAttribute="bottom" secondItem="hwx-JJ-JrH" secondAttribute="bottom" id="HdM-fP-WoW"/>
+                                    <constraint firstAttribute="height" constant="60" id="I3u-xu-xXk"/>
+                                    <constraint firstItem="weM-AC-Sxu" firstAttribute="top" secondItem="vcI-Z8-6MO" secondAttribute="top" id="J3G-Uw-X8B"/>
+                                    <constraint firstItem="Qno-kp-3hl" firstAttribute="width" secondItem="hwx-JJ-JrH" secondAttribute="width" id="OPK-rj-Hzk"/>
+                                    <constraint firstItem="uKf-8Z-cUH" firstAttribute="width" secondItem="hwx-JJ-JrH" secondAttribute="width" id="P5h-aM-hBE"/>
+                                    <constraint firstItem="S8E-Bb-OJB" firstAttribute="top" secondItem="vcI-Z8-6MO" secondAttribute="top" id="Rb7-y4-PbK"/>
+                                    <constraint firstItem="weM-AC-Sxu" firstAttribute="width" secondItem="hwx-JJ-JrH" secondAttribute="width" id="UyC-CF-xCH"/>
+                                    <constraint firstItem="S8E-Bb-OJB" firstAttribute="leading" secondItem="vcI-Z8-6MO" secondAttribute="leading" id="ece-Kl-NKO"/>
+                                    <constraint firstAttribute="bottom" secondItem="weM-AC-Sxu" secondAttribute="bottom" id="ga9-DS-DIK"/>
+                                    <constraint firstItem="weM-AC-Sxu" firstAttribute="leading" secondItem="hwx-JJ-JrH" secondAttribute="trailing" id="iuD-wL-aWd"/>
+                                    <constraint firstAttribute="bottom" secondItem="Qno-kp-3hl" secondAttribute="bottom" id="k6U-Vf-lgx"/>
+                                    <constraint firstItem="0JY-2U-JAO" firstAttribute="width" secondItem="hwx-JJ-JrH" secondAttribute="width" id="mp9-On-W3Z"/>
+                                    <constraint firstItem="Qno-kp-3hl" firstAttribute="top" secondItem="vcI-Z8-6MO" secondAttribute="top" id="nr9-th-FJM"/>
+                                    <constraint firstItem="Qno-kp-3hl" firstAttribute="leading" secondItem="0JY-2U-JAO" secondAttribute="trailing" id="tbn-ox-Jzn"/>
+                                    <constraint firstItem="0JY-2U-JAO" firstAttribute="leading" secondItem="weM-AC-Sxu" secondAttribute="trailing" id="vsg-0K-qkJ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="HSc-OO-OmK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="JnF-1d-6VQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vcI-Z8-6MO" secondAttribute="trailing" id="NfE-oL-qM8"/>
+                            <constraint firstItem="vcI-Z8-6MO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="R83-ow-cgd"/>
+                            <constraint firstItem="vcI-Z8-6MO" firstAttribute="top" secondItem="HSc-OO-OmK" secondAttribute="bottom" id="Y1S-3k-N70"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vcI-Z8-6MO" secondAttribute="bottom" id="amG-L2-yqH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HSc-OO-OmK" secondAttribute="trailing" id="ccV-Zf-3Tz"/>
+                            <constraint firstItem="HSc-OO-OmK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hsX-QQ-eM7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <size key="freeformSize" width="410" height="896"/>
+                    <connections>
+                        <outlet property="bottomView" destination="vcI-Z8-6MO" id="xvu-Oc-2nl"/>
+                        <outlet property="containerView" destination="HSc-OO-OmK" id="Umg-t9-udh"/>
+                        <outlet property="fifthBtn" destination="uKf-8Z-cUH" id="5Oq-jI-eUD"/>
+                        <outlet property="firstBtn" destination="hwx-JJ-JrH" id="twM-8b-g6g"/>
+                        <outlet property="fourthBtn" destination="Qno-kp-3hl" id="EdV-FZ-m5B"/>
+                        <outlet property="secondBtn" destination="weM-AC-Sxu" id="bJI-0j-xgv"/>
+                        <outlet property="thirdBtn" destination="0JY-2U-JAO" id="DFj-v6-ozv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icons8_Bar_Chart_96px" width="30" height="30"/>
+        <image name="icons8_Bar_Chart_96px_1" width="30" height="30"/>
+        <image name="icons8_Home_32px" width="30" height="30"/>
+        <image name="icons8_Home_96px" width="30" height="30"/>
+        <image name="icons8_Male_User_96px_1" width="30" height="30"/>
+        <image name="icons8_Male_User_96px_2" width="30" height="30"/>
+        <image name="icons8_Stocks_96px_1" width="30" height="30"/>
+        <image name="icons8_Stocks_96px_2" width="30" height="30"/>
+        <image name="icons8_Wallet_96px_3" width="30" height="30"/>
+        <image name="icons8_Wallet_96px_4" width="30" height="30"/>
+    </resources>
+</document>
